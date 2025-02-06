@@ -30,7 +30,8 @@ class MattermostMethods():
         self.command_options = {
             'cases': ['list', 'annotate', 'iocs', 'commentary', 'close'],
             'auth': ['status','renew'],
-            'howto': ['commands']  
+            'howto': ['commands'],
+            'shutdown': ['now']  
         }
 
     def load_config(self):
@@ -219,6 +220,13 @@ class MattermostMethods():
                                 self.post_message("Command: /{0}".format(command))
                                 for option in self.command_options[command]:
                                     self.post_message("- Option: {0}".format(option))
+                        else:
+                            self.post_message("Invalid command option")
+                if command == 'shutdown':
+                    if args[0] in self.command_options[command]:
+                        if args[0] == 'now':
+                            self.post_message("Shutting down")
+                            sys.exit(0)
                         else:
                             self.post_message("Invalid command option")
             else:
