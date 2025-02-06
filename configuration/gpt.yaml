@@ -1,0 +1,10 @@
+gpt:
+  model: 'gpt-3.5-turbo-1106'
+  modality: 
+    - 'text'
+  effort: 'medium'
+  role: 'developer'
+  content: "You are a security analyst, please analyze this data and provide a summary. 
+            Please provide a recommendation in the format: recommendation: <close,investigate>. 
+            Keep in mind that hosts with internal.subterfuge.biz in their hostname are internal hosts."
+  n: 1

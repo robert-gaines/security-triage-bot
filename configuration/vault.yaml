@@ -1,0 +1,7 @@
+vault:
+  fqdn: ""
+  token: ""
+  buffer: 3600
+  iris_token_path: ""
+  mattermost_token_path: ""
+  gpt_token_path: ""

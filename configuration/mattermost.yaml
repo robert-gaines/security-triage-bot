@@ -1,0 +1,8 @@
+mattermost:
+  fqdn: ""
+  channel: ""
+  username: ''
+  user_id: ''
+  channel_id: ''
+  team_id: ''
+  polling_interval: 1
